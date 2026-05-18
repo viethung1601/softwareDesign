@@ -26,4 +26,9 @@ public class WebsiteSubscription {
     public void cancel() {
         System.out.println("Canceling website subscription...");
     }
+
+    @Override
+    public String toString() {
+        return website.getUrl() + " | " + frequency + " | " + communicationChannel;
+    }
 }

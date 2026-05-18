@@ -11,4 +11,8 @@ public class Notification {
         System.out.println(message);
     }
 
+    public String getMessage() {
+        return message;
+    }
+
 }
