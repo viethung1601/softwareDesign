@@ -1,6 +1,6 @@
 package monitor;
 
-import Observer.Observer;
+import observer.Observer;
 import model.Notification;
 import model.WebsiteSubscription;
 import strategy.WebsiteComparisionStrategy;
@@ -12,6 +12,7 @@ import java.util.List;
 public class WebsiteMonitor implements Subject {
     private List<Observer> observers = new ArrayList<>();
     private WebsiteComparisionStrategy comparisionStrategy;
+    private int counter = 0;
 
     public WebsiteMonitor(WebsiteComparisionStrategy comparisionStrategy) {
         this.comparisionStrategy = comparisionStrategy;
@@ -21,8 +22,7 @@ public class WebsiteMonitor implements Subject {
             String currentContent = mockUpCurrentContent(subscription);
             Notification notification = detectUpdate(subscription, currentContent);
             if (notification != null) {
-                notifyObservers(notification)
-                ;
+                notifyObservers(notification);
             }
         }
     }
@@ -42,11 +42,8 @@ public class WebsiteMonitor implements Subject {
             return new Notification(
                     "Update detected for: " + subscription.getWebsite().getUrl()
             );
-        } else {
-            return new Notification(
-                    "No change detected for: " + subscription.getWebsite().getUrl()
-            );
         }
+        return null;
 
     }
 
@@ -68,6 +65,9 @@ public class WebsiteMonitor implements Subject {
     }
 
     private String mockUpCurrentContent(WebsiteSubscription subscription) {
-        return "<html><body>Mock content for " + subscription.getWebsite().getUrl() + "</body></html>";
+        counter++;
+        return "<html><body>Mock content version " + counter + " for "
+                + subscription.getWebsite().getUrl()
+                + "</body></html>";
     }
 }

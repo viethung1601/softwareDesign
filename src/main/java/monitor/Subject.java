@@ -1,6 +1,6 @@
 package monitor;
 
-import Observer.Observer;
+import observer.Observer;
 import model.Notification;
 
 

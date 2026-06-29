@@ -13,7 +13,7 @@ public class WebsiteSubscription {
         this.website = website;
         this.frequency = frequency;
         this.communicationChannel = communicationChannel;
-        this.previousContent = "";
+        this.previousContent = null;
     }
 
     public Website getWebsite() {
