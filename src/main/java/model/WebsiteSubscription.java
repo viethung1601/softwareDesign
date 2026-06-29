@@ -7,11 +7,13 @@ public class WebsiteSubscription {
     private Website website;
     private Frequency frequency;
     private CommunicationChannel communicationChannel;
+    private String previousContent;
 
     public WebsiteSubscription(Website website, Frequency frequency, CommunicationChannel communicationChannel) {
         this.website = website;
         this.frequency = frequency;
         this.communicationChannel = communicationChannel;
+        this.previousContent = "";
     }
 
     public Website getWebsite() {
@@ -26,9 +28,11 @@ public class WebsiteSubscription {
     public void cancel() {
         System.out.println("Canceling website subscription...");
     }
-
-    @Override
-    public String toString() {
-        return website.getUrl() + " | " + frequency + " | " + communicationChannel;
+    public String getPreviousContent() {
+        return previousContent;
     }
+    public void setPreviousContent(String previousContent) {
+        this.previousContent = previousContent;
+    }
+
 }
