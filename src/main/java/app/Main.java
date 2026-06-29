@@ -3,9 +3,11 @@ package app;
 import enums.CommunicationChannel;
 import enums.Frequency;
 import model.User;
-import Observer.NotificationObserver;
+import observer.NotificationObserver;
 import monitor.WebsiteMonitor;
+import strategy.ContentSizeComparision;
 import strategy.HtmlContentComparision;
+import strategy.TextContentComparision;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,9 +17,11 @@ public class Main {
         hung.registerForSubscription("https://www.instagram.com/hylo_open/", Frequency.MONTHLY, CommunicationChannel.SMS);
         hung.registerForSubscription("https://www.youtube.com/", Frequency.MONTHLY, CommunicationChannel.SMS);
 
-        WebsiteMonitor websiteMonitor = new WebsiteMonitor(new HtmlContentComparision());
+        WebsiteMonitor websiteMonitor = new WebsiteMonitor(new TextContentComparision());
         NotificationObserver observer = new NotificationObserver();
         websiteMonitor.addObserver(observer);
+        websiteMonitor.checkUpdates(hung.getSubscriptions());
+        websiteMonitor.checkUpdates(hung.getSubscriptions());
         websiteMonitor.checkUpdates(hung.getSubscriptions());
 
     }

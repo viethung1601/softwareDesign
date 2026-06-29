@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dec5ab8c-72d2-44ff-b8d9-f1c5f2520c8c" name="Changes" comment="ex6" />
+    <list default="true" id="dec5ab8c-72d2-44ff-b8d9-f1c5f2520c8c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Observer/NotificationObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/NotificationObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Observer/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/WebsiteSubscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/WebsiteSubscription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/monitor/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitor/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/monitor/WebsiteMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitor/WebsiteMonitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/ContentSizeComparision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strategy/ContentSizeComparision.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Observer/NotificationObserver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Observer/NotificationObserver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Observer/Observer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Observer/Observer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/WebsiteSubscription.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/WebsiteSubscription.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/monitor/Subject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitor/Subject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/monitor/WebsiteMonitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/monitor/WebsiteMonitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/strategy/ContentSizeComparision.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/strategy/ContentSizeComparision.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +49,17 @@
     &quot;assignee&quot;: &quot;viethung1601&quot;
   }
 }</component>
+  <component name="GitHubPullRequestState"><![CDATA[{
+  "prStates": [
+    {
+      "id": {
+        "id": "PR_kwDOSg-HpM7ryVX0",
+        "number": 1
+      },
+      "lastSeen": 1782737549398
+    }
+  ]
+}]]></component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/viethung1601/softwareDesign.git&quot;,
@@ -109,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.WebsiteMonitorApp" />
         <item itemvalue="Application.WebsiteMonitorApp" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.WebsiteMonitorApp" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
