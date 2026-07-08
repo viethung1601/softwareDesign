@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dec5ab8c-72d2-44ff-b8d9-f1c5f2520c8c" name="Changes" comment="ex6" />
+    <list default="true" id="dec5ab8c-72d2-44ff-b8d9-f1c5f2520c8c" name="Changes" comment="ex6">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/strategy/WebsiteComparisonStrategyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/monitor/WebsiteMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/monitor/WebsiteMonitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/ContentSizeComparision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strategy/ContentSizeComparison.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/HtmlContentComparision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strategy/HtmlContentComparison.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/TextContentComparision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strategy/TextContentComparison.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/WebsiteComparisionStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strategy/WebsiteComparisonStrategy.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +26,7 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
+        <option value="Dockerfile" />
         <option value="Class" />
       </list>
     </option>
@@ -33,33 +45,33 @@
     &quot;assignee&quot;: &quot;viethung1601&quot;
   }
 }</component>
-  <component name="GitHubPullRequestState"><![CDATA[{
-  "prStates": [
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
     {
-      "id": {
-        "id": "PR_kwDOSg-HpM7ryVX0",
-        "number": 1
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOSg-HpM7ryVX0&quot;,
+        &quot;number&quot;: 1
       },
-      "lastSeen": 1782737549398
+      &quot;lastSeen&quot;: 1782737549398
     }
   ]
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/viethung1601/softwareDesign.git",
-    "accountId": "524ee88e-5ee4-4cee-9c1d-3ca00c85755e"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/viethung1601/softwareDesign.git&quot;,
+    &quot;accountId&quot;: &quot;524ee88e-5ee4-4cee-9c1d-3ca00c85755e&quot;
   },
-  "recentNewPullRequestHead": {
-    "server": {
-      "useHttp": false,
-      "host": "github.com",
-      "port": null,
-      "suffix": null
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
     },
-    "owner": "viethung1601",
-    "repository": "softwareDesign"
+    &quot;owner&quot;: &quot;viethung1601&quot;,
+    &quot;repository&quot;: &quot;softwareDesign&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$USER_HOME$/.jdks/openjdk-25.0.1/lib/src.zip!/java.base/java/util/Observer.java" root0="SKIP_INSPECTION" />
   </component>
@@ -75,13 +87,14 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.WebsiteMonitorApp.executor": "Run",
+    "JUnit.WebsiteComparisonStrategyTest.executor": "Run",
     "Maven.softwareDesign [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "#2 on master__branch__for__ex6",
+    "git-widget-placeholder": "master__branch__for__ex6",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -101,7 +114,7 @@
       <recent name="C:\Users\laptop\IdeaProjects\softwareDesign\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.WebsiteComparisonStrategyTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.Main" />
       <module name="softwareDesign" />
@@ -128,13 +141,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebsiteComparisonStrategyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="softwareDesign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="strategy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="strategy" />
+      <option name="MAIN_CLASS_NAME" value="strategy.WebsiteComparisonStrategyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WebsiteComparisonStrategyTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.WebsiteMonitorApp" />
         <item itemvalue="Application.WebsiteMonitorApp" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.WebsiteMonitorApp" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +187,10 @@
       <workItem from="1780330240774" duration="1957000" />
       <workItem from="1781166331826" duration="9000" />
       <workItem from="1782736610087" duration="735000" />
+      <workItem from="1782895105866" duration="33000" />
+      <workItem from="1783292416585" duration="1806000" />
+      <workItem from="1783294249626" duration="148000" />
+      <workItem from="1783438340247" duration="1704000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -200,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782740310643</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ex6">
+      <option name="closed" value="true" />
+      <created>1782740529773</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1782740529773</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

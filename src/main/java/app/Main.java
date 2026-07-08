@@ -5,25 +5,33 @@ import enums.Frequency;
 import model.User;
 import observer.NotificationObserver;
 import monitor.WebsiteMonitor;
-import strategy.ContentSizeComparision;
-import strategy.HtmlContentComparision;
-import strategy.TextContentComparision;
+import strategy.HtmlContentComparison;
 
 public class Main {
     public static void main(String[] args) {
-        User hung = new User();
-        hung.registerForSubscription("https://www.dw.com/de/themen/s-9077", Frequency.DAILY, CommunicationChannel.EMAIL);
-        hung.registerForSubscription("https://mail.google.com/mail/u/0/?hl=vi#inbox", Frequency.DAILY, CommunicationChannel.EMAIL);
-        hung.registerForSubscription("https://www.instagram.com/hylo_open/", Frequency.MONTHLY, CommunicationChannel.SMS);
-        hung.registerForSubscription("https://www.youtube.com/", Frequency.MONTHLY, CommunicationChannel.SMS);
+        if (args.length == 0) {
+            System.out.println("Please provide a website URL as command line parameter.");
+            System.out.println("Example: java app.Main https://example.com");
+            return;
+        }
 
-        WebsiteMonitor websiteMonitor = new WebsiteMonitor(new TextContentComparision());
+        String websiteUrl = args[0];
+
+        User user = new User();
+        user.registerForSubscription(
+                websiteUrl,
+                Frequency.DAILY,
+                CommunicationChannel.EMAIL
+        );
+
+        WebsiteMonitor websiteMonitor = new WebsiteMonitor(new HtmlContentComparison());
         NotificationObserver observer = new NotificationObserver();
+
         websiteMonitor.addObserver(observer);
-        websiteMonitor.checkUpdates(hung.getSubscriptions());
-        websiteMonitor.checkUpdates(hung.getSubscriptions());
-        websiteMonitor.checkUpdates(hung.getSubscriptions());
 
+        System.out.println("Monitoring website: " + websiteUrl);
+
+        websiteMonitor.checkUpdates(user.getSubscriptions());
+        websiteMonitor.checkUpdates(user.getSubscriptions());
     }
-
 }
