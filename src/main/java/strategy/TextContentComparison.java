@@ -1,6 +1,6 @@
 package strategy;
 
-public class TextContentComparision implements WebsiteComparisionStrategy{
+public class TextContentComparison implements WebsiteComparisonStrategy {
 
     @Override
     public boolean hasChanged(String oldContent, String newContent) {

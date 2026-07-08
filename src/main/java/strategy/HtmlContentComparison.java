@@ -1,9 +1,10 @@
 package strategy;
 
-public class ContentSizeComparision implements WebsiteComparisionStrategy {
+public class HtmlContentComparison implements WebsiteComparisonStrategy {
+
     @Override
     public boolean hasChanged(String oldContent, String newContent) {
-        if(oldContent.length() != newContent.length()) {
+        if(!oldContent.equals(newContent)) {
             return true;
         }
         return false;

@@ -1,6 +1,6 @@
 package strategy;
 
-public interface WebsiteComparisionStrategy {
+public interface WebsiteComparisonStrategy {
     boolean hasChanged(String oldContent, String newContent);
 }
 

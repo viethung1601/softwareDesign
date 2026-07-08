@@ -3,7 +3,7 @@ package monitor;
 import observer.Observer;
 import model.Notification;
 import model.WebsiteSubscription;
-import strategy.WebsiteComparisionStrategy;
+import strategy.WebsiteComparisonStrategy;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,10 +11,10 @@ import java.util.List;
 
 public class WebsiteMonitor implements Subject {
     private List<Observer> observers = new ArrayList<>();
-    private WebsiteComparisionStrategy comparisionStrategy;
+    private WebsiteComparisonStrategy comparisionStrategy;
     private int counter = 0;
 
-    public WebsiteMonitor(WebsiteComparisionStrategy comparisionStrategy) {
+    public WebsiteMonitor(WebsiteComparisonStrategy comparisionStrategy) {
         this.comparisionStrategy = comparisionStrategy;
     }
     public void checkUpdates(List<WebsiteSubscription> subscriptions) {
